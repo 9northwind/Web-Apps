@@ -244,6 +244,8 @@ with tabB:
                 st.write('Probability:', proba[0][1] * 100)
 
     with tab2:
+        model = joblib.load('XGB Model.pkl')
+
         file = st.file_uploader('Upload Processed CSV', type=['csv'])
 
 

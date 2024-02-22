@@ -1,5 +1,4 @@
 import streamlit as st
-import plotly.graph_objects as go
 import json
 
 st.title('Churn Prediction')
@@ -128,18 +127,10 @@ with open('eval_results.json', 'r') as f:
 epochs = len(results['train']['error'])
 x_axis = list(range(0, epochs))
 
-# Plot Log Loss using Plotly
+# Plotting Log Loss using Streamlit
 st.subheader('XGBoost Log Loss')
-fig = go.Figure()
-fig.add_trace(go.Scatter(x=x_axis, y=results['train']['logloss'], mode='lines', name='Train'))
-fig.add_trace(go.Scatter(x=x_axis, y=results['eval']['logloss'], mode='lines', name='Validation'))
-fig.update_layout(xaxis_title='Epochs', yaxis_title='Log Loss', legend_title='Data')
-st.plotly_chart(fig)
+st.line_chart({'Train': results['train']['logloss'], 'Validation': results['eval']['logloss']})
 
-# Plot Classification Error using Plotly
+# Plotting Classification Error using Streamlit
 st.subheader('XGBoost Classification Error')
-fig = go.Figure()
-fig.add_trace(go.Scatter(x=x_axis, y=results['train']['error'], mode='lines', name='Train'))
-fig.add_trace(go.Scatter(x=x_axis, y=results['eval']['error'], mode='lines', name='Validation'))
-fig.update_layout(xaxis_title='Epochs', yaxis_title='Classification Error', legend_title='Data')
-st.plotly_chart(fig)
+st.line_chart({'Train': results['train']['error'], 'Validation': results['eval']['error']})

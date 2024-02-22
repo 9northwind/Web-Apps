@@ -134,5 +134,3 @@ st.line_chart({'Train': results['train']['logloss'], 'Validation': results['eval
 # Plotting Classification Error using Streamlit
 st.subheader('XGBoost Classification Error')
 st.line_chart({'Train': results['train']['error'], 'Validation': results['eval']['error']})
-
-showSidebarNavigation = true

@@ -7,8 +7,8 @@ import numpy as np
 # Loading the trained model
 model = joblib.load('XGB Model.pkl')
 
-st.page_link('Homet.py', label='Predict')
-st.page_link('Pages/Analysis.py', label='Analysis')
+st.page_link('XGB-Web-App/Homet.py', label='Predict')
+st.page_link('XGB-Web-App/Pages/Analysis.py', label='Analysis')
 
 tab1, tab2 = st.tabs(['Manual', 'CSV'])
 with tab1:

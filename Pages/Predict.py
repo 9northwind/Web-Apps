@@ -7,8 +7,6 @@ import numpy as np
 # Loading the trained model
 model = joblib.load('XGB Model.pkl')
 
-st.page_link('XGB-Web-App/Homet.py', label='Predict')
-st.page_link('XGB-Web-App/Pages/Analysis.py', label='Analysis')
 
 tab1, tab2 = st.tabs(['Manual', 'CSV'])
 with tab1:
@@ -133,3 +131,6 @@ with tab2:
             num_ones = np.sum(prediction_df == 1)
             st.write(f'Number of Customer who will not Churn : {num_zeros}')
             st.write(f'Number of Customer who will Churn : {num_ones}')
+
+showSidebarNavigation = true
+

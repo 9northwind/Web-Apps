@@ -132,5 +132,3 @@ with tab2:
             st.write(f'Number of Customer who will not Churn : {num_zeros}')
             st.write(f'Number of Customer who will Churn : {num_ones}')
 
-showSidebarNavigation = true
-

@@ -1,10 +1,13 @@
 import streamlit as st
 import json
 import pandas as pd
+
+pip install joblib
+
 import joblib
 import numpy as np
 
-tabA, tabB, tabC = st.tabs(['Home', 'Analysis', 'Prediction'])
+tabA, tabB, tabC = st.tabs(['Home', 'Prediction', 'Analysis'])
 
 with tabA:
     st.title('Churn Prediction')

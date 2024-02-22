@@ -58,11 +58,11 @@ with tabA:
     
             Test Accuracy :0.8639883833494676  
             Validation Accuracy :0.8571428571428571''')
-            col3, col4 = st.columns(2)
-            with col3:
-                st.image('XGB-Web-App/Logloss and Classification error/Second Logloss.png')
-            with col4:
-                st.image('XGB-Web-App/Logloss and Classification error/Second Classification error.png')
+            # col3, col4 = st.columns(2)
+            # with col3:
+            #     st.image('XGB-Web-App/Logloss and Classification error/Second Logloss.png')
+            # with col4:
+            #     st.image('XGB-Web-App/Logloss and Classification error/Second Classification error.png')
         with tab3:
             st.write('''
             subsample = 0.5  

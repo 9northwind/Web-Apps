@@ -37,11 +37,11 @@ with tabA:
               
             Test Accuracy :0.8620522749273959  
             Validation Accuracy :0.8601694915254238''')
-            col1, col2 = st.columns(2)
-            with col1:
-                st.image('Logloss and Classification error/First Logloss.png')
-            with col2:
-                st.image('Logloss and Classification error/First Classification error.png')
+            # col1, col2 = st.columns(2)
+            # with col1:
+            #     st.image('Logloss and Classification error/First Logloss.png')
+            # with col2:
+            #     st.image('Logloss and Classification error/First Classification error.png')
         with tab2:
             st.write('''
             subsample = 0.6  
@@ -58,11 +58,11 @@ with tabA:
     
             Test Accuracy :0.8639883833494676  
             Validation Accuracy :0.8571428571428571''')
-            col3, col4 = st.columns(2)
-            with col3:
-                st.image('Logloss and Classification error/Second Logloss.png')
-            with col4:
-                st.image('Logloss and Classification error/Second Classification error.png')
+            # col3, col4 = st.columns(2)
+            # with col3:
+            #     st.image('Logloss and Classification error/Second Logloss.png')
+            # with col4:
+            #     st.image('Logloss and Classification error/Second Classification error.png')
         with tab3:
             st.write('''
             subsample = 0.5  
@@ -79,11 +79,11 @@ with tabA:
               
             Test Accuracy :0.861568247821878  
             Validation Accuracy :0.8589588377723971''')
-            col5, col6 = st.columns(2)
-            with col5:
-                st.image('Logloss and Classification error/Third Logloss.png')
-            with col6:
-                st.image('Logloss and Classification error/Third Classification error.png')
+            # col5, col6 = st.columns(2)
+            # with col5:
+            #     st.image('Logloss and Classification error/Third Logloss.png')
+            # with col6:
+            #     st.image('Logloss and Classification error/Third Classification error.png')
         with tab4:
             st.write('''
             subsample = 0.7  
@@ -100,11 +100,11 @@ with tabA:
               
             Test Accuracy :0.8659244917715392  
             Validation Accuracy :0.8541162227602905''')
-            col7, col8 = st.columns(2)
-            with col7:
-                st.image('Logloss and Classification error/Fourth Logloss.png')
-            with col8:
-                st.image('Logloss and Classification error/Fourth Classification error.png')
+            # col7, col8 = st.columns(2)
+            # with col7:
+            #     st.image('Logloss and Classification error/Fourth Logloss.png')
+            # with col8:
+            #     st.image('Logloss and Classification error/Fourth Classification error.png')
         with tab5:
             st.write('''
             subsample = 0.5  
@@ -121,11 +121,11 @@ with tabA:
               
             Test Accuracy :0.861568247821878  
             Validation Accuracy :0.8631961259079903''')
-            col9, col10 = st.columns(2)
-            with col9:
-                st.image('Logloss and Classification error/Fifth Logloss.png')
-            with col10:
-                st.image('Logloss and Classification error/Fifth Classification error.png')
+            # col9, col10 = st.columns(2)
+            # with col9:
+            #     st.image('Logloss and Classification error/Fifth Logloss.png')
+            # with col10:
+            #     st.image('Logloss and Classification error/Fifth Classification error.png')
 
     with open('eval_results.json', 'r') as f:
         results = json.load(f)

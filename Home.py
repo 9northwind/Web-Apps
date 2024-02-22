@@ -120,6 +120,9 @@ if st.checkbox('HyperParameter Tuning:'):
             st.image('Logloss and Classification error/Fifth Logloss.png')
         with col2:
             st.image('Logloss and Classification error/Fifth Classification error.png')
+            
+st.page_link('Pages/Analysis.py', label='Analysis')
+st.page_link('Pages/Predict.py', label='Predict')
 
 with open('eval_results.json', 'r') as f:
     results = json.load(f)

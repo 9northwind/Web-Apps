@@ -11,3 +11,6 @@ report = ("https://app.powerbi.com/reportEmbed?reportId=b99a36f5-13a5-44fc-8846-
           "9ea332bc-d5e1-4211-a36b-1e06be85ea93")
 
 main(path=report)
+
+st.page_link('Home.py', label='Analysis')
+st.page_link('Pages/Predict.py', label='Predict')
